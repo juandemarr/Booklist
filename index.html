@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reading List</title>
+    <script src="booklist.js" type="module"></script>
+    <link rel="stylesheet" type="text/css" href="booklist.css"/>
+    <link rel="icon" type="image/png" href="img/icon.png"/>
+</head>
+<body>
+    <section id="main">
+        <h1>The Booklist</h1>
+        <div id="containerInputs">
+
+            <section id="inputs">
+                <label for="nameBook">Book name:</label>
+                <input type="text" placeholder="Introduce the book name" id="nameBook"/>
+                <br>
+
+                <label for="author">Author:</label>
+                <input type="text" placeholder="Introduce the author" id="author"/>
+                <br>
+
+                <label for="genre">Genre: </label>
+                <input type="text" placeholder="Introduce the genre" id="genre"/>
+                <br>
+                <button id="addBook">Add Book</button>
+            </section>
+
+        </div>
+
+        <section id="contenedorTabla">
+            <div id="divTabla">
+
+            </div>
+            <div id="contenedorBoton">
+                <div id="botonDiv">
+                    
+                </div>
+                <p id="librosLeidos"></p>
+                <p id="librosNoLeidos"></p>
+            </div>
+        </section>
+
+    </section>
+</body>
+</html>

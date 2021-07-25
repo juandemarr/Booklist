@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+}
+
+/*CONTENEDORES*/
+
+body{
+    font-family:Verdana;
+    font-weight:bold;
+    display:flex;
+    justify-content:space-around;
+    background-image: url(img/fondo-pergamino.jpg);
+    background-size:cover;
+}
+body:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:49%;
+    width:580px;
+    height:500px;
+    background-image: url(img/flor.png);
+    z-index:-1;
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+#main{
+    width:85%;
+}
+#containerInputs{
+    display:flex;
+    justify-content:space-around;
+}
+#inputs{
+    padding:2%;
+    width:50%;
+}
+#contenedorTabla{
+    display:flex;
+    justify-content:space-around;
+    padding-top:4%;
+}
+#divTabla{
+    width:80%;
+}
+#divTabla button{
+    width:80px;
+    background-color:orange;
+    padding:1.5%;
+    font-weight:bold;
+    border:2px solid rgb(189, 75, 0);
+    margin:3% 0 3%;
+}
+#divTabla input{
+    width:95%;
+    background-color:rgb(250, 232, 175);
+    border:1px solid orange;
+    padding:3%;
+}
+#contenedorBoton{
+    width:20%;
+    padding-left:4%;
+}
+#botonDiv{
+    display:flex;
+    justify-content:space-around;
+    margin-bottom:9%;
+}
+#botonDiv button{
+    height:32px;
+}
+
+/*TABLA*/
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    table-layout: fixed;/*Importante, para aque la tabla no ensanche, sino esté fija*/
+}
+tr{
+    border:2px solid rgb(189, 75, 0);
+}
+th,td{
+    height:40px;
+    text-align:center;
+    word-wrap: break-word;/*Importante, para que la palabra se rompa y no ensanche la celda*/
+}
+td{
+    font-size:.9em;
+}
+
+/*ELEMENTOS*/
+
+h1{
+    text-align:center;
+    margin:4% 0;
+    font-variant:small-caps;
+    font-size:2.5em;
+
+    /*letter gradient*/
+    color:#000;
+    background-color:#fff;
+    mix-blend-mode:multiply;
+    position:relative;
+}
+/*letter gradient*/
+h1:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    background:linear-gradient(orange,#000);
+    width:100%;
+    height:100%;
+    mix-blend-mode: screen;
+}
+input{
+    padding:1.5%;
+    border:1px solid black;
+    border-radius:5px;
+    margin:0 0 5% 20px;
+    width:58%;
+    font-size:1em;
+}
+input#author{
+    margin-left:58px;
+}
+input#genre{
+    margin-left:66px;
+}
+#containerInputs button, #botonDiv button{
+    margin:5% 0 0 38%;
+    width:100px;
+    padding:7px;
+    border-radius:5px;
+    background-color: #f33a05;
+    border:1px solid #f33a05;
+    font-weight:bold;
+    color:white;
+}
+#containerInputs button:hover, #botonDiv button:hover{
+    transition:.3s ease-out;
+    background-color:white;
+    color:#f33a05;
+}
+#botonLeido{
+    margin:0;
+}
+
